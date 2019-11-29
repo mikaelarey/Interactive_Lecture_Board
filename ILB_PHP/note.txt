@@ -1,0 +1,13 @@
+(ILB) INTERACTIVE LECTURE BOARD TO DO TASKS
+
+1. Login Authentication 			(Done)
+2. Register Authentication 			(Done)
+3. Teacher Redirect to ILB			(Done)
+
+4. Teacher Logout to ILB			(Next)
+5. Process Of Saving The Files 		(Next)
+6. Download Page For Students		(Next)
+7. Download Filter Based on Course 	(Next)
+8. Logout Page for Students			(Next)
+
+9. ILB Flowchart					(Next)

@@ -1,0 +1,88 @@
+html, body {
+	padding:0;
+	margin:0;
+}
+
+.choose-color {
+	position:absolute;
+	top:1rem;
+	right:1rem;
+	text-align: center;
+}
+
+.green {
+	position:absolute;
+	top:4rem;
+	right:1.5rem;
+	width:1rem;
+	height:1rem;
+	border-radius:30%;
+	background:green;
+}
+
+.blue {
+	position:absolute;
+	top:5.5rem;
+	right:1.5rem;
+	width:1rem;
+	height:1rem;
+	border-radius:30%;
+	background:blue;
+}
+
+.red {
+	position:absolute;
+	top:7rem;
+	right:1.5rem;
+	width:1rem;
+	height:1rem;
+	border-radius:30%;
+	background:red;
+}
+
+.yellow {
+	position:absolute;
+	top:8.5rem;
+	right:1.5rem;
+	width:1rem;
+	height:1rem;
+	border-radius:30%;
+	background:yellow;
+}
+
+.orange {
+	position:absolute;
+	top:10rem;
+	right:1.5rem;
+	width:1rem;
+	height:1rem;
+	border-radius:30%;
+	background:orange;
+}
+
+.black {
+	position:absolute;
+	top:11.5rem;
+	right:1.5rem;
+	width:1rem;
+	height:1rem;
+	border-radius:30%;
+	background:black;
+}
+
+.eraser {
+	position:absolute;
+	top:20rem;
+	right:1rem;
+}
+
+.eraser-button {
+	position:absolute;
+	top:22rem;
+	right:1.5rem;
+	width:1rem;
+	height:1rem;
+	border-radius:50%;
+	background:white;
+	border:2px solid;
+}

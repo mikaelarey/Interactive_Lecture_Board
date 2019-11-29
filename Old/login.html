@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style>
+		html, body {
+			background:rgb(232, 235, 233);
+			font-family:"Roboto", sans-serif;
+		}
+		.login {
+			background:white;
+			width:15rem;
+			position:relative;
+			margin:auto;/*
+			transform:translateY(70%);*/
+			padding:1rem;
+		}
+		.select {
+			width:100%;
+			padding:.3rem;
+			background:white;
+		}
+		.label {
+			width:100%;
+		}
+		.btn-enter {
+			color:white;
+			background:teal;
+			padding:.5rem;
+			border:none;
+			width:100%;
+			transition:.5s;
+		}
+		.btn-enter:hover {
+			background:rgb(0, 60, 60);
+		}
+		.h2 {
+			position:absolute;
+			margin:none;
+			padding:none;
+			transform:translateY(-260%);
+			left:7.5rem;
+			text-align:center;
+			color:teal;
+		}
+		.p {
+			left:8rem;
+			position:absolute;
+			text-align:center;
+			transform:translateY(-240%);
+			color:teal;
+		}
+		.error {
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<div class="login">
+		<form action="" method="post" onsubmit="return validate();">
+			<img src="logo.png" style="width:6rem;margin-bottom:2rem;"><br>
+			<h2 class="h2">Colegio De<br>Montalban</h2>
+			<p class="p"><small>Interactive Lecture<br>Board</small></p>
+
+			<label class="label">Year Level:</label>
+			<select name="year" id="year" class="select">
+				<option value="0"></option>
+				<option value="1">1st year</option>
+				<option value="2">2nd year</option>
+				<option value="3">3rd year</option>
+				<option value="4">4th year</option>
+			</select>
+			<br><span id="msgYear"></span><br>
+
+			<label class="label">Section:</label>
+			<select name="section" id="section" class="select">
+				<option value="0"></option>
+				<option value="1">Section A</option>
+				<option value="2">Section B</option>
+				<option value="3">Section C</option>
+				<option value="4">Section D</option>
+			</select>
+			<br><span id="msgSection"></span><br>
+
+			<label class="label">Room number:</label>
+			<select name="room" id="room" class="select">
+				<option value="0"></option>
+				<option value="101">Room 101</option>
+				<option value="102">Room 102</option>
+				<option value="103">Room 103</option>
+				<option value="104">Room 104</option>
+				<option value="105">Room 105</option>
+				<option value="106">Room 106</option>
+				<option value="107">Room 107</option>
+				<option value="108">Room 108</option>
+				<option value="109">Room 109</option>
+				<option value="110">Room 110</option>
+			</select>
+			<br><span id="msgRoom"></span><br>
+
+			<label class="label">Subject:</label>
+			<select name="subject" id="subject" class="select">
+				<option value="0"></option>
+				<option value="mathematics">Mathematics</option>
+				<option value="english">English</option>
+				<option value="filipino">Filipino</option>
+				<option value="science">Science</option>
+			</select>
+			<br><span id="msgSubject"></span><br>
+
+			<button type="submit" class="btn-enter">Enter Class Room</button>
+		</form>
+	</div>
+
+	<script>
+		function validate() {
+			var subject = document.getElementById('subject');
+			var room = document.getElementById('room');
+			var year = document.getElementById('year');
+			var section = document.getElementById('section');
+
+			var error = 0;
+
+			if(subject.value === 0) {
+				document.getElementById('msgSubject').innerHTML = '<small class="error">Please select subject</small>';
+				error += 1;
+			}
+			else {
+				document.getElementById('msgSubject').innerHTML = '';
+			}
+
+			if(error === 0) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

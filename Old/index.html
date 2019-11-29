@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <script src="app.js"></script>
+</head>
+<html>
+    <body onload="init()">
+        <center>
+            <canvas id="can" style="position:absolute;top:0;left:0;"></canvas>
+        </center>
+
+        <div style="padding:10px; width:2.8rem; position:relative; top:.5rem;  float:right; background:lightgrey; height:25rem;z-index:2;">
+            <div class="choose-color">Pen<br>Color</div>
+            <div class="green" id="green" onclick="color(this)"></div>
+            <div class="blue" id="blue" onclick="color(this)"></div>
+            <div class="red" id="red" onclick="color(this)"></div>
+            <div class="yellow" id="yellow" onclick="color(this)"></div>
+            <div class="orange" id="orange" onclick="color(this)"></div>
+            <div class="black" id="black" onclick="color(this)"></div>
+
+            <div class="eraser">Eraser</div>
+            <div class="eraser-button" id="white" onclick="color(this)"></div>
+        </div>
+
+        <!-- <img id="canvasimg" style="position:absolute;top:10%;left:52%;display:none;"> -->
+
+        <!-- buttons -->
+        <input type="button" value="Save" id="btn" size="30" onclick="save()" style="position:absolute;bottom:1rem;left:1rem;width:6rem;padding:.5rem;font-weight: bolder;color:white; border:none;background:teal;">
+        <input type="button" value="Clear" id="clr" size="23" onclick="erase()" style="position:absolute;bottom:1rem;left:8rem;width:6rem;padding:.5rem;font-weight: bolder;color:white; border:none;background:red;">
+
+        <div style="padding: 0.5rem; background:white; height:4rem;position:relative;color:teal;">
+            <img src="logo.png" style="width:4rem;"/>
+            <h1 style="transform:translateY(-170%);padding:0;margin:0;margin-left:4.5rem;">Colegio De Montalban</h1>
+            <p style="transform:translateY(-450%);margin-left:9rem;"><small>Interactive Lecture Board</small></p>
+        </div>
+    </body>
+</html>
